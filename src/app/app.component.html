@@ -1,0 +1,27 @@
+
+<nav class="navbar bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Grocery</a>
+  </div>
+</nav>
+
+<div class="container-fluid imgStyle">
+<div class="imgDiv">
+  <app-recipe-search (searchEvent)="doSearch($event)"></app-recipe-search>
+</div>
+</div>
+
+
+<div class="row">
+
+  <div class="column col-lg-6 colStyle">
+    <app-recipe-results [recipeData]="recipeResults"></app-recipe-results>
+  </div>
+
+  <div class="column col-lg-6 colStyle">
+    <app-grocery>Loading...</app-grocery>
+  </div>
+
+</div>
+
+

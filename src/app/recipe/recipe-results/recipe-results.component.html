@@ -1,0 +1,22 @@
+<p>recipe-results works!</p>
+
+
+<div *ngFor="let recipe of recipeData">
+
+<div class="card" style="width: 18rem;">
+    <img [src]="recipe.image" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">{{recipe.title}}</h5>
+      <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+      <a href="#" class="btn btn-primary">Go To Recipe</a>
+    </div>
+  </div>
+
+</div>
+
+
+<!-- <div>
+    <p>{{recipe.title}}</p>
+<img [src]="recipe.image" alt="">
+</div> -->
+
