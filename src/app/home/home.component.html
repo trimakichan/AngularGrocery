@@ -11,9 +11,19 @@
     </div>
 
     <div class="container-fluid p-3 boxForRow">
-      <div class="rowRecipes justify-content-center align-items-center">
+      <div class="rowRecipes ">
         <!-- <div class="col"> -->
         <ng-container class="item" *ngFor="let recipe of recipeResults">
+
+          <!-- <div class="card cardStyle">
+            <img [src]="recipe.image" class="card-img-top" alt="..." [routerLink]="['/reciperesults', recipe.id]" >
+            <div class="card-body">
+              <p class="card-text">{{recipe.title}}</p>
+            </div>
+          </div> -->
+
+
+          <div>
           <img
             [src]="recipe.image"
             class="card-img-top"
@@ -21,6 +31,8 @@
             class="rowing largeposter"
             [routerLink]="['/reciperesults', recipe.id]"
           />
+          <h4 class="text-center text-light">{{recipe.title}}</h4>
+        </div>
         </ng-container>
         <!-- </div> -->
       </div>

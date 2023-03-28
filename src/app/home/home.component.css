@@ -53,3 +53,7 @@ html, body {
   border-radius: 20px;
 }
 
+.cardStyle {
+  min-height: 300px ;
+  width: 300px;
+}
