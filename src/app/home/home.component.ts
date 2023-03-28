@@ -19,7 +19,7 @@ constructor(private recipeService:RecipeService, private router: Router) {}
       console.log('Data From API:', result);
       this.recipeResults = result.results
       console.log('recipeResults:',this.recipeResults)
-      this.router.navigate(['reciperesults'])
+      this.router.navigate(['reciperesults', this.recipeResults.id])
 
       
     })

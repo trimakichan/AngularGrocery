@@ -18,4 +18,9 @@ export class RecipeService {
 
   }
 
+  getRecipeDetails(id:any):Observable<any> {
+    console.log('id in service:', id) 
+    return this.http.get(`https://api.spoonacular.com/recipes/${id}/information?apiKey=${environment.appId}&includeNutrition=false`)
+  }
+
 }

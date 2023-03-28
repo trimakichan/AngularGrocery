@@ -3,7 +3,7 @@
 
 
 .imgStyle {
-    height: 100vh;
+    height: 600px;
     background-color: white;
     padding: 0;
 
@@ -23,3 +23,40 @@
     justify-content: center;
     align-items: center;
   }
+
+
+  
+.rowRecipes {
+  display: flex;
+  overflow-y: hidden;
+  overflow-x: scroll;
+}
+
+.rowimg {
+  max-height: 200px;
+  object-fit: contain;
+  width: 100%;
+  box-sizing: content-box;
+  transition: transform 450ms;
+  margin-right: 7px;
+}
+
+.rowimg:hover 
+{
+  transform: scale(1.09);
+  cursor: pointer;
+}
+
+.largeposter 
+{
+  max-height: 300px;
+}
+
+/* move the images with <- -> key  */
+.rowposter::-webkit-scrollbar
+{
+  display: none;
+
+}
+
+
