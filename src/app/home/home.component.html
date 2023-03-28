@@ -1,1 +1,25 @@
-<p>home works!</p>
+<div class="container-fluid containerStyle">
+  <div class="container-fluid imgStyle">
+    <div class="imgDiv">
+      <div>
+        <h3 class="text-centermb-5" style="color: red">Search Recipes & Create Shopping List!</h3>
+        <app-recipe-search (searchEvent)="doSearch($event)"></app-recipe-search>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="row">
+
+    <div class="column col-lg-6 colStyle">
+      <app-recipe-results [recipeData]="recipeResults"></app-recipe-results>
+    </div>
+  
+    <div class="column col-lg-6 colStyle">
+      <app-grocery>Loading...</app-grocery>
+    </div>
+  
+  </div>
+  
+

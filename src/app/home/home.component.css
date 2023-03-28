@@ -1,0 +1,25 @@
+
+
+
+
+.imgStyle {
+    height: 100vh;
+    background-color: white;
+    padding: 0;
+
+  }
+  
+  .imgDiv {
+    height: 100%;
+    width: 100%;
+     background: url(../../assets/nordwood-themes-wtevVfGYwnM-unsplash.jpg) center
+      center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; 
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
