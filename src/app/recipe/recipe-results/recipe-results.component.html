@@ -1,22 +1,33 @@
-<p>recipe-results works!</p>
+<div class="contain mt-5">
+  <div class="row p-5  mx-auto">
+    <div class="col col-lg-8 col-xl-8">
+      <h1>{{ getRecipeDetails.title }}</h1>
+      <div class="box">
+        <img
+          class="img-fluid"
+          [src]="getRecipeDetails.image"
+          alt="Recipe Image"
+        />
+      </div>
 
-<!-- 
-<div *ngFor="let recipe of recipeData">
+      <div>
+        <h3>Ingredients</h3>
 
-<div class="card" style="width: 18rem;">
-    <img [src]="recipe.image" class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">{{recipe.title}}</h5>
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
-      <!-- <a href="#" class="btn btn-primary">Go To Recipe</a>
+        <ul>
+          <li *ngFor="let recipe of getRecipeDetails.extendedIngredients">
+            {{ recipe.amount }}
+            {{ recipe.nameClean }}
+          </li>
+        </ul>
+
+        <h3>Instructions</h3>
+        <p [innerHTML]="getRecipeDetails.instructions"></p>
+        <p></p>
+      </div>
+    </div>
+
+    <div class="col col-lg-4 col-xl-4">
+      <app-grocery></app-grocery>
     </div>
   </div>
-
-</div> -->
-
-
-<!-- <div>
-    <p>{{recipe.title}}</p>
-<img [src]="recipe.image" alt="">
-</div> -->
-
+</div>
