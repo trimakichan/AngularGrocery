@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 import { RecipeService} from './services/recipe.service'
 
 @Component({
@@ -8,18 +8,35 @@ import { RecipeService} from './services/recipe.service'
 })
 export class AppComponent {
   title = 'AngularGrocery';
-  recipeResults: any = []
+  // navbg: any;
+  
+  // recipeResults: any = []
 
   constructor(private recipeService: RecipeService){}
 
-  doSearch(searchValue: any) {
-    console.log('SearchValue-AppCompo:', searchValue)
-    this.recipeService.getRecipe(searchValue).subscribe(result => {
-      console.log('Data From API:', result);
-      this.recipeResults = result.results
-      console.log('recipeResults:',this.recipeResults)
-      
-    })
 
-  }
+
+//   @HostListener('document:scroll') scrollover() {
+
+    
+//     if ((document.body.scrollTop > 0) || document.documentElement.scrollTop > 0) {
+//       this.navbg = {
+//         'background-color': '#000000'
+//       }
+//     } else {
+//       this.navbg = {}
+// }
+//   }
 }
+
+  // doSearch(searchValue: any) {
+  //   console.log('SearchValue-AppCompo:', searchValue)
+  //   this.recipeService.getRecipe(searchValue).subscribe(result => {
+  //     console.log('Data From API:', result);
+  //     this.recipeResults = result.results
+  //     console.log('recipeResults:',this.recipeResults)
+      
+  //   })
+
+  // }
+

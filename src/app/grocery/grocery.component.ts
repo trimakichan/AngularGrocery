@@ -14,5 +14,9 @@ export class GroceryComponent {
     console.log(this.task, this.tasks);
     this.task = ''; 
   }
+
+  remove(id:number){
+    this.tasks = this.tasks.filter((v,i)=> i !==id);
+  }
 }
 

@@ -1,25 +1,39 @@
-<div>
-    <h2> Find A Recipe and Create A List</h2>
-    <div class="row">
-        <div class="col-xs-6 col-md-4">
-            <div class="input-group">
-                <input type="text" class="form-control" placeholder="enter grocery items" id="txtSearch" [(ngModel)]="task"/>
-                <div class="input-group-btn">
-                    <button class="btn btn-primary" type="button" (click)="onclick()">
-        <span><i class="bi bi-check"></i></span>
-        </button>
-                </div>
-            </div>
+<div class="container-fluid pt-4">
+  <h2 class="title mb-4">Find A Recipe and Create A List</h2>
+
+  <div class="row">
+    <div class="col text-center">
+      <div class="input-group">
+        <input
+          type="text"
+          class="form-control"
+          style="background-color:rgb(240, 227, 240);"
+          placeholder="enter grocery items"
+          id="txtSearch"
+          [(ngModel)]="task"
+        />
+        <div class="input-group-btn">
+          <button class="btn btn-secondary" type="button" (click)="onclick()">
+            <span><i class="bi bi-check"></i></span>
+          </button>
         </div>
-        <!-- <p>{{tasks | json}}</p> -->
-
+      </div>
     </div>
+  </div>
+
+  <table class="table">
+    <tbody>
+      <tr *ngFor="let task of tasks; let i = index">
+        <th scope="row">{{ i + 1 }}</th>
+        <td>{{ task.name }}</td>
+        <td style="color: red; font-weight: bold" (click)="remove(i)">X</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- <ul class="list-group">
+    <li *ngFor="let task of tasks" class="list-group-item">
+      <p>{{ task.name }}<span> X</span></p>
+    </li>
+  </ul> -->
 </div>
-
-<ul class="list-group">
-<li *ngFor="let task of tasks" class="list-group-item">
-    <span>{{task.name}}</span>
-
-</li>
-
-</ul>

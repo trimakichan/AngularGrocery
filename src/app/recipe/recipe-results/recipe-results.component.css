@@ -1,0 +1,9 @@
+html, body {
+    margin:0;
+    height:100%;
+  }
+  
+  .bg-container {
+background-color: rgb(242, 229, 231);
+  }
+  

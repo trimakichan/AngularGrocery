@@ -1,4 +1,4 @@
-.imgStyle {
+/* .imgStyle {
   height: 400px;
   background-color: white;
   padding: 0;
@@ -12,11 +12,24 @@
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-}
+} */
 
 
-.colStyle {
+/* .colStyle {
  
     background-color: yellow;
     border: 1px solid black;
+} */
+
+.navbar-brand span {
+  font-family:  'Ubuntu', sans-serif;
+  font-weight: 800;
+  font-size:xx-large;
+  color: white;
+}
+
+.nav-item .nav-link {
+  font-family:'Ubuntu', sans-serif; 
+  color: white;
+  font-size: x-large;
 }

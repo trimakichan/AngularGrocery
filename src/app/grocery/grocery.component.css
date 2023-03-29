@@ -1,0 +1,11 @@
+
+ .title {
+    font-family: 'Delicious Handrawn';
+  }
+
+
+  .divSize {
+    width: 40%;
+    height: 800px;
+    border: 1px solid black;
+  }
