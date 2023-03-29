@@ -1,4 +1,4 @@
-html, body {
+/* html, body {
     margin:0;
     height:100%;
 
@@ -11,7 +11,7 @@ html, body {
     -o-background-size: cover;
     background-size: cover;
     height: 100vh;
-  }
+  } */
 
   .title {
     font-family: 'Delicious Handrawn';
@@ -23,4 +23,3 @@ html, body {
     height: 800px;
     border: 1px solid black;
   }
- 

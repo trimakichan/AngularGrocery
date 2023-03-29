@@ -11,6 +11,7 @@ import { GroceryComponent } from './grocery/grocery.component';
 import { RecipeResultsComponent } from './recipe/recipe-results/recipe-results.component';
 import { RecipeSearchComponent } from './recipe/recipe-search/recipe-search.component';
 import { HomeComponent } from './home/home.component';
+import { ListComponent } from './list/list.component';
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import { HomeComponent } from './home/home.component';
     GroceryComponent,
     RecipeResultsComponent,
     RecipeSearchComponent,
-    HomeComponent
+    HomeComponent,
+    ListComponent
   ],
   imports: [
     BrowserModule,
