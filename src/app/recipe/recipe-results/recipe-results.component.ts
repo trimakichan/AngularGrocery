@@ -29,7 +29,7 @@ export class RecipeResultsComponent implements OnInit {
   this.service.getRecipeDetails(id).subscribe(result => {
     console.log('Recipe Details:', result)
     this.getRecipeDetails = result;
-    console.log(this.getRecipeDetails.title)
+    // console.log(this.getRecipeDetails.title)
   })
   }
 
