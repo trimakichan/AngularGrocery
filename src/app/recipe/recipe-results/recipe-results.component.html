@@ -3,7 +3,7 @@
 <div class="container">
   <div class="row p-5  mx-auto">
     <div class="col col-lg-8 col-xl-8">
-      <h1>{{ getRecipeDetails.title }}</h1>
+      <h1 style="color: rgb(205, 72, 72)">{{ getRecipeDetails.title }}</h1>
       <div class="box">
         <img
           class="img-fluid"
@@ -24,8 +24,8 @@
 
         <h3>Instructions</h3>
         <p [innerHTML]="getRecipeDetails.instructions"></p>
-        <a [href]="getRecipeDetails.sourceUrl
-        ">Jump to Original Recipe</a>
+        <a [href]="getRecipeDetails.spoonacularSourceUrl
+        ">Recipe Link</a>
       </div> 
     </div>
 

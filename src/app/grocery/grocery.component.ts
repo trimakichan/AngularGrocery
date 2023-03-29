@@ -10,9 +10,14 @@ export class GroceryComponent {
   tasks = [];
 
   onclick() {
-    this.tasks.push({name: this.task});
-    console.log(this.task, this.tasks);
-    this.task = ''; 
+    if(this.task) {
+      this.tasks.push({name: this.task});
+      console.log(this.task, this.tasks);
+      this.task = ''; 
+    } else {
+      alert('Please Enter Grocery Items!')
+    }
+   
   }
 
   remove(id:number){
