@@ -57,3 +57,10 @@ html, body {
   min-height: 300px ;
   width: 300px;
 }
+
+.title {
+  font-family: 'Delicious Handrawn', Arial, Helvetica, sans-serif;
+   color: #fd5907;
+   font-weight: bold;
+   font-size: 3rem;
+}

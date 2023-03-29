@@ -1,4 +1,6 @@
-<div class="contain mt-5">
+
+<div class="bg-container">
+<div class="container">
   <div class="row p-5  mx-auto">
     <div class="col col-lg-8 col-xl-8">
       <h1>{{ getRecipeDetails.title }}</h1>
@@ -22,12 +24,17 @@
 
         <h3>Instructions</h3>
         <p [innerHTML]="getRecipeDetails.instructions"></p>
-        <p></p>
-      </div>
+        <a [href]="getRecipeDetails.sourceUrl
+        ">Jump to Original Recipe</a>
+      </div> 
     </div>
 
     <div class="col col-lg-4 col-xl-4">
+      
       <app-grocery></app-grocery>
+  
     </div>
   </div>
+</div>
+
 </div>

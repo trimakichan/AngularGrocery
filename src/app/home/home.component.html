@@ -2,8 +2,8 @@
   <div class="contain imgStyle">
     <div class="row imgDiv justify-content-center align-items-center">
       <div class="col-3" style="width: 550px; height: 200px">
-        <h3 class="text-center mb-5" style="color: red">
-          Search Recipes & Create Shopping List!
+        <h3 class="text-center mb-5 title">
+          Find a Recipe & Create a List
         </h3>
 
         <app-recipe-search (searchEvent)="doSearch($event)"></app-recipe-search>
@@ -11,30 +11,20 @@
     </div>
 
     <div class="container-fluid p-3 boxForRow">
-      <div class="rowRecipes ">
-        <!-- <div class="col"> -->
+      <div class="rowRecipes">
         <ng-container class="item" *ngFor="let recipe of recipeResults">
-
-          <!-- <div class="card cardStyle">
-            <img [src]="recipe.image" class="card-img-top" alt="..." [routerLink]="['/reciperesults', recipe.id]" >
-            <div class="card-body">
-              <p class="card-text">{{recipe.title}}</p>
-            </div>
-          </div> -->
-
-
           <div>
-          <img
-            [src]="recipe.image"
-            class="card-img-top"
-            alt="..."
-            class="rowing largeposter"
-            [routerLink]="['/reciperesults', recipe.id]"
-          />
-          <h4 class="text-center text-light">{{recipe.title}}</h4>
-        </div>
+            <img
+              [src]="recipe.image"
+              class="card-img-top"
+              alt="..."
+              class="rowing largeposter"
+              [routerLink]="['/reciperesults', recipe.id]"
+             
+            />
+            <h4 class="text-center text-light">{{ recipe.title }}</h4>
+          </div>
         </ng-container>
-        <!-- </div> -->
       </div>
     </div>
   </div>

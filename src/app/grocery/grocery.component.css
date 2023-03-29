@@ -1,0 +1,26 @@
+html, body {
+    margin:0;
+    height:100%;
+
+  }
+  
+  .bg-container {
+    background-color: rgb(251, 244, 244) ;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100vh;
+  }
+
+  .title {
+    font-family: 'Delicious Handrawn';
+  }
+
+
+  .divSize {
+    width: 40%;
+    height: 800px;
+    border: 1px solid black;
+  }
+ 

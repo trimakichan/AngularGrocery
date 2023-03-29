@@ -8,25 +8,25 @@ import { RecipeService} from './services/recipe.service'
 })
 export class AppComponent {
   title = 'AngularGrocery';
-  navbg: any;
-  test: any = 'hi'
+  // navbg: any;
+  
   // recipeResults: any = []
 
   constructor(private recipeService: RecipeService){}
 
 
 
-  @HostListener('document:scroll') scrollover() {
+//   @HostListener('document:scroll') scrollover() {
 
     
-    if ((document.body.scrollTop > 0) || document.documentElement.scrollTop > 0) {
-      this.navbg = {
-        'background-color': '#000000'
-      }
-    } else {
-      this.navbg = {}
-}
-  }
+//     if ((document.body.scrollTop > 0) || document.documentElement.scrollTop > 0) {
+//       this.navbg = {
+//         'background-color': '#000000'
+//       }
+//     } else {
+//       this.navbg = {}
+// }
+//   }
 }
 
   // doSearch(searchValue: any) {
