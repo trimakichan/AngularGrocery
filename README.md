@@ -1,4 +1,5 @@
 Diagram: https://www.figma.com/file/WC6t7lqAC9w2J6UIbiWnjH/Grocery-List-App?node-id=0%3A1&t=i9Rl5SbFuVbbPmME-1
+Youtube Link: https://youtu.be/bZZeawmREP4
 
 
 # AngularGrocery
