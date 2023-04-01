@@ -1,3 +1,6 @@
+Diagram: https://www.figma.com/file/WC6t7lqAC9w2J6UIbiWnjH/Grocery-List-App?node-id=0%3A1&t=i9Rl5SbFuVbbPmME-1
+
+
 # AngularGrocery
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.3.
